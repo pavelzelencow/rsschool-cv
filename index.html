@@ -5,8 +5,217 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+        <div class="header__inner">
+            <a href="#" class="logo">
+                <img class="logo__img" src="images/logo.svg" alt="logo">
+            </a>
+            <nav class="menu">
+                <ul class="menu__items">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#about">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#experience">Experience</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <main class="main">
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about__inner">
+                <div class="about__descr">
+                <h1 class="about__title">
+                <span class="about__pretitle">Hello, I'm</span> Pavel Zelencow
+                <span class="about__subtitle">Beginner Front-end Developer</span>
+                </h1>
+                <p class="about__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eligendi amet magnam ut officiis nesciunt fugit quis porro. Dolor nostrum officia reiciendis, qui debitis natus distinctio eum possimus quam repellendus ipsam atque corporis perferendis minus, voluptates, odio praesentium. Id aut assumenda enim ut nobis dolorem consequatur recusandae. Sapiente, at quam?
+                </p>
+                <a class="about__link" target="_blank" href="https://t.me/zelencow">Let's Talk</a>
+                </div>
+                <div class="about__img-box">
+                    <img class="about__img" src="images/avatar.png" alt="avatar">
+                </div>
+                </div>
+            </div>
+            <article class="skills">
+                <div class="container">
+                <h2 class="skills__title title">
+                    Hard Skills
+                </h2>
+                <ul class="skills__items">
+                    <li class="skills__item">
+                        <img src="images/skills/html.svg" alt="html5">
+                        <span>HTML 5</span>
+                    </li>
+                    <li class="skills__item">
+                        <img src="images/skills/css.svg" alt="css3">
+                        <span>CSS 3</span>
+                    </li>
+                    <li class="skills__item">
+                        <img src="images/skills/js.svg" alt="js">
+                        <span>Java Script</span>
+                    </li>
+                    <li class="skills__item">
+                        <img src="images/skills/figma.svg" alt="figma">
+                        <span>Figma</span>
+                    </li>
+                    <li class="skills__item">
+                        <img src="images/skills/photoshop.svg" alt="photoshop">
+                        <span>Adobe <br>
+                            Photoshop</span>
+                    </li>
+                </ul>
+                </div>
+            </article>
+        </section>
+        <div id="experience" class="experience">
+            <div class="container">
+                <article class="education">
+                    <h2 class="education__title title">
+                        Education and Courses
+                    </h2>
+                    <ul class="education__items">
+                        <li class="education__item">
+                            <p>2021 - now</p>
+                            <p>Javascript/Front-End Program</p>
+                            <p>Rolling Scopes School</p>
+                        </li>
+                        <li class="education__item">
+                            <p>2021</p>
+                            <p>Javascript/Front-End Developer</p>
+                            <p>GeekBrains</p>
+                        </li>
+                        <li class="education__item">
+                            <p>2015 - 2023</p>
+                            <p>Engineer</p>
+                            <p>Belarusian State
+                                Agrarian Technical University</p>
+                        </li>
+                    </ul>
+                </article>
+                <article class="languages">
+                    <h2 class="title">
+                        Languages
+                    </h2>
+                    <ul class="education__items">
+                        <li class="education__item">
+                            <p>Russian</p>
+                            <p>Native</p>
+                        </li>
+                        <li class="education__item">
+                            <p>English</p>
+                            <p>A2</p>
+                        </li>
+                    </ul>
+                </article>
+                <article class="works">
+                    <h2 class="works__title title">
+                        Works
+                    </h2>
+                    <ul class="works__list">
+                        <li class="works__item"><a class="works__link" target="_blank" href="https://github.com/pavelzelencow">
+                            <img class="works__img" src="images/desire.jpg" alt="work desire">
+                        </a>
+                        </li>
+                        <li class="works__item"><a class="works__link" target="_blank" href="https://github.com/pavelzelencow">
+                            <img class="works__img" src="images/marcho.jpg" alt="work marcho">
+                        </a>
+                        </li>
+                        <li class="works__item"><a class="works__link" target="_blank" href="https://github.com/pavelzelencow">
+                            <img class="works__img" src="images/mavic.jpg" alt="work mavic">
+                        </a>
+                        </li>
+                        <li class="works__item"><a class="works__link" target="_blank" href="https://github.com/pavelzelencow">
+                            <img class="works__img"  src="images/glee.jpg" alt="work glee">
+                        </a>
+                        </li>
+                    </ul>
+                </article>
+                <article class="code">
+                    <h2 class="title">
+                        Code Example
+                    </h2>
+                    <pre>              <code class="code__example">
+                                    let map;
+                                
+                                    function initMap() {
+                                      map = new google.maps.Map(document.getElementById("map"), {
+                                        center: { lat: -34.397, lng: 150.644 },
+                                        zoom: 8,
+                                      });
+                                    }
+                                      </code>
+                                    </pre>
+                </article>
+            </div>
+        </div>
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <h2 class="title">
+                    Contacts
+                </h2>
+                <div class="contacts__inner">
+                    <div class="contacts__info">
+                        <div class="contacts__info-box">
+                          <p class="contacts__info-title">Минск</p>
+                          <a class="contacts__info-phone" href="tel:+375259082963">+3 (75) 908– 29 – 63</a>
+                          <a class="contacts__info-email" target="_blank" href="mailto:pavel.zelencow@gmail.com">pavel.zelencow@gmail.com</a>
+                        </div>
+                      </div>
+                    <form class="contacts__form">
+                        <h4 class="contacts__form-title">Still have questions?</h4>
+                        <div class="contacts__form-line">
+                          <input class="contacts__form-input" placeholder="Your name:" type="text" required>
+                          <input class="contacts__form-input" placeholder="Your e-mail:" type="email" required>
+                        </div>
+                        <textarea class="contacts__form-textarea" placeholder="What are you interested in?"></textarea>
+                        <button class="contacts__form-btn" type="submit">Send</button>
+                      </form>
+                </div>      
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+        <ul class="footer__links">
+            <li class="footer__item">
+                <a class="footer__link" target="_blank" href="https://github.com/pavelzelencow">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45px" height="45px" viewBox="0 0 45 45" version="1.1">
+                        <g id="surface1">
+                        <path fill="black" d="M 33.925781 4.660156 C 33.925781 5.144531 33.53125 5.539062 33.046875 5.539062 C 32.5625 5.539062 32.167969 5.144531 32.167969 4.660156 C 32.167969 4.171875 32.5625 3.78125 33.046875 3.78125 C 33.53125 3.78125 33.925781 4.171875 33.925781 4.660156 Z M 33.925781 4.660156 "/>
+                        <path fill="black" d="M 22.5 9.316406 C 14.261719 9.316406 7.558594 16.019531 7.558594 24.257812 C 7.558594 32.578125 14.316406 39.199219 22.5 39.199219 C 30.703125 39.199219 37.441406 32.566406 37.441406 24.257812 C 37.441406 16.019531 30.738281 9.316406 22.5 9.316406 Z M 19.792969 37.160156 C 19.839844 36.96875 19.863281 36.765625 19.863281 36.5625 L 19.863281 33.0625 C 19.859375 31.78125 20.308594 31.582031 20.820312 30.800781 C 20.984375 30.550781 21.007812 30.234375 20.886719 29.960938 C 20.761719 29.6875 20.511719 29.492188 20.214844 29.449219 C 16.726562 28.929688 15.359375 27.132812 14.824219 25.714844 C 14.113281 23.828125 14.488281 21.476562 15.742188 19.996094 C 15.929688 19.769531 16.101562 19.371094 15.964844 18.96875 C 15.699219 18.160156 15.738281 16.875 15.90625 16.375 C 16.664062 16.488281 17.371094 16.917969 18.175781 17.40625 C 18.644531 17.691406 18.972656 17.953125 19.539062 17.800781 C 20.523438 17.53125 21.523438 17.390625 22.5 17.375 C 23.480469 17.390625 24.476562 17.53125 25.460938 17.800781 C 26.023438 17.953125 26.367188 17.683594 26.824219 17.40625 C 27.628906 16.917969 28.335938 16.488281 29.09375 16.375 C 29.261719 16.875 29.304688 18.160156 29.039062 18.960938 C 28.898438 19.371094 29.070312 19.769531 29.257812 19.996094 C 30.511719 21.476562 30.886719 23.828125 30.175781 25.714844 C 29.640625 27.132812 28.273438 28.929688 24.785156 29.449219 C 24.492188 29.492188 24.238281 29.6875 24.113281 29.960938 C 23.992188 30.234375 24.015625 30.550781 24.179688 30.800781 C 24.691406 31.578125 25.140625 31.777344 25.136719 33.0625 L 25.136719 36.566406 C 25.136719 36.769531 25.160156 36.96875 25.207031 37.160156 C 24.320312 37.347656 23.414062 37.441406 22.5 37.441406 C 21.585938 37.441406 20.679688 37.347656 19.792969 37.160156 Z M 26.902344 36.6875 C 26.898438 36.644531 26.894531 36.605469 26.894531 36.5625 L 26.894531 33.0625 C 26.894531 32.054688 26.675781 31.398438 26.398438 30.90625 C 29.066406 30.1875 30.96875 28.59375 31.820312 26.335938 C 32.71875 23.949219 32.3125 21.097656 30.8125 19.125 C 31.085938 17.921875 31.078125 16.027344 30.425781 15.164062 C 30.132812 14.777344 29.722656 14.578125 29.273438 14.597656 C 27.898438 14.660156 26.839844 15.34375 25.683594 16.042969 C 24.628906 15.773438 23.5625 15.632812 22.511719 15.617188 C 22.503906 15.617188 22.496094 15.617188 22.488281 15.617188 C 21.4375 15.632812 20.371094 15.773438 19.316406 16.042969 C 18.171875 15.351562 17.109375 14.660156 15.726562 14.597656 C 15.277344 14.574219 14.867188 14.777344 14.574219 15.164062 C 13.921875 16.023438 13.914062 17.917969 14.1875 19.125 C 12.6875 21.097656 12.28125 23.949219 13.179688 26.335938 C 14.03125 28.59375 15.933594 30.1875 18.601562 30.90625 C 18.382812 31.296875 18.199219 31.789062 18.132812 32.472656 C 17.046875 32.851562 16.167969 32.601562 15.570312 31.59375 C 14.871094 30.421875 13.6875 29.472656 12.328125 29.589844 C 11.84375 29.632812 11.488281 30.058594 11.53125 30.539062 C 11.570312 31.023438 12 31.382812 12.480469 31.339844 C 13.109375 31.285156 13.730469 31.941406 14.058594 32.492188 C 14.996094 34.078125 16.519531 34.640625 18.105469 34.300781 L 18.105469 36.558594 C 18.105469 36.601562 18.101562 36.644531 18.09375 36.6875 C 12.890625 34.839844 9.316406 29.828125 9.316406 24.257812 C 9.316406 16.988281 15.230469 11.074219 22.5 11.074219 C 29.769531 11.074219 35.683594 16.988281 35.683594 24.257812 C 35.683594 29.828125 32.109375 34.839844 26.902344 36.6875 Z M 26.902344 36.6875 "/>
+                        <path fill="black" d="M 40.605469 0 L 4.394531 0 C 1.972656 0 0 1.972656 0 4.394531 L 0 40.605469 C 0 43.027344 1.972656 45 4.394531 45 L 40.605469 45 C 43.027344 45 45 43.027344 45 40.605469 L 45 4.394531 C 45 1.972656 43.027344 0 40.605469 0 Z M 43.242188 40.605469 C 43.242188 42.058594 42.058594 43.242188 40.605469 43.242188 L 4.394531 43.242188 C 2.941406 43.242188 1.757812 42.058594 1.757812 40.605469 L 1.757812 4.394531 C 1.757812 2.941406 2.941406 1.757812 4.394531 1.757812 L 40.605469 1.757812 C 42.058594 1.757812 43.242188 2.941406 43.242188 4.394531 Z M 43.242188 40.605469 "/>
+                        <path fill="black" d="M 11.953125 5.539062 L 29.53125 5.539062 C 30.015625 5.539062 30.410156 5.144531 30.410156 4.660156 C 30.410156 4.171875 30.015625 3.78125 29.53125 3.78125 L 11.953125 3.78125 C 11.46875 3.78125 11.074219 4.171875 11.074219 4.660156 C 11.074219 5.144531 11.46875 5.539062 11.953125 5.539062 Z M 11.953125 5.539062 "/>
+                        </g>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" target="_blank" href="https://rs.school/js/">
+                    <img src="images/rs_school_js.svg" alt="rs school">
+                </a>
+            </li>
+        </ul>
+        <p class="footer__copy">
+            © 2022 by Pavel Zelencow
+        </p>
+    </div>
+    </footer>
 </body>
 </html>
