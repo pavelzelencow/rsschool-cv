@@ -12,6 +12,7 @@
 - __Goal__: development as a front-end developer
 - __My qualities:__ Responsibility, pursuit of new knowledge
 
+
 ****
 ## Skills
 - HTML5, CSS3, JavaScript (Basic)
