@@ -180,6 +180,10 @@ body {
     font-weight: bold;
 }
 
+.languages{
+    margin-bottom: 100px;
+}
+
 .works__img{
     box-shadow: 20px 0px 60px 0px rgb(92 202 202 / 35%);
 }
